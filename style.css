@@ -1,0 +1,189 @@
+h3 {
+    text-align: center;
+}
+
+.container0 {
+    background-color: rgb(200, 200, 200);
+    width: 45%;
+    margin: 10px auto;
+}
+
+/* display flex make the box in the container become inline */
+.container1 {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: row-reverse;
+    width: 45%;
+    margin: 10px auto;
+}
+
+/* flex wrap make the box in the container can move to next line, instead of force in 1 line */
+.container2 {
+    background-color: rgb(200, 200, 200);
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+/* justify has a function to set the box position in the container in terms of horizontal axis */
+.container3 {
+    background-color: rgb(200, 200, 200);
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-evenly;
+}
+
+/* align item needed to set the box position in the container in terms of vertical axis */
+.container4 {
+    background-color: rgb(200, 200, 200);
+    width: 45%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+
+.item:nth-child(odd){
+    background-color: palevioletred;
+}
+
+.item:nth-child(even){
+    background-color: goldenrod;
+}
+
+.item1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.item1:nth-child(odd){
+    background-color: rgb(216, 112, 112);
+}
+
+.item1:nth-child(even){
+    background-color: rgb(44, 255, 90);
+}
+
+
+.container5 {
+    background-color: rgb(200, 200, 200);
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+/* order to sort the box */
+.item2_1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    order: 3;
+}
+
+.item2_2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    order: 1;
+}
+
+.item2_3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    order: 2;
+}
+
+/* flex grow to set the size of box  */
+.item2_4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    flex-grow: 3;
+}
+
+.item2_5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 200px;
+    background-color: deeppink;
+    flex-grow: 1;
+}
+
+.item2_6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    flex-grow: 2;
+}
+
+/* align self to make position of 1 box in terms of vertical axis  */
+.item2_7 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    flex-grow: 3;
+}
+
+.item2_8 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 200px;
+    background-color: deeppink;
+    flex-grow: 1;
+}
+
+.item2_9 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    flex-grow: 2;
+    align-self: flex-end;
+}
